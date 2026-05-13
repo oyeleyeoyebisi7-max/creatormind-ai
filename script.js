@@ -31,7 +31,7 @@ Make it emotional and highly engaging.
 try{
 
 const response = await fetch(
-AIzaSyDCOE6fWH-6kyh9OhoYh87uBetaq_luKpU,
+`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${AIzaSyDCOE6fWH-6kyh9OhoYh87uBetaq_luKpU}`,
 {
 method:"POST",
 headers:{
@@ -64,6 +64,7 @@ output.innerHTML =
 }
 
 }
+
 function copyText(){
 
 const text =
