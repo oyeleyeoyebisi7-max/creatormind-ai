@@ -7,7 +7,7 @@ const output =
 document.getElementById("output");
 
 output.innerHTML =
-"Generating amazing content...";
+"<div class='loading'>Generating amazing content...</div>";
 
 const API_KEY =
 "YOUR_API_KEY";
