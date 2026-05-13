@@ -64,3 +64,12 @@ output.innerHTML =
 }
 
 }
+function copyText(){
+
+const text =
+document.getElementById("output").innerText;
+
+navigator.clipboard.writeText(text);
+
+alert("Copied!");
+}
