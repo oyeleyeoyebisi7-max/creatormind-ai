@@ -31,7 +31,7 @@ Make it emotional and highly engaging.
 try{
 
 const response = await fetch(
-`AIzaSyDSkzPevUQLF6W54dvGdPQulqYHE_MRfKM}`,
+AIzaSyDCOE6fWH-6kyh9OhoYh87uBetaq_luKpU,
 {
 method:"POST",
 headers:{
