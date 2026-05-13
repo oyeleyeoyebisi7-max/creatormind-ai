@@ -81,8 +81,7 @@ cursor:pointer;
 
 .output{
 margin-top:50px;
-background:rgba(15,23,42,0.7);
-backdrop-filter:blur(10px);
+background:#0f172a;
 border:1px solid #1e293b;
 padding:30px;
 border-radius:20px;
@@ -100,33 +99,4 @@ font-size:42px;
 flex-direction:column;
 }
 
-}
-
-.loading{
-animation:pulse 1s infinite;
-}
-
-@keyframes pulse{
-0%{
-opacity:0.4;
-}
-50%{
-opacity:1;
-}
-100%{
-opacity:0.4;
-}
-}
-
-.copy-btn{
-margin-top:20px;
-width:100%;
-background:#334155;
-color:white;
-}
-
-footer{
-margin-top:60px;
-text-align:center;
-color:#64748b;
 }
