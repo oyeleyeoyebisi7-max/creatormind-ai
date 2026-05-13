@@ -7,10 +7,10 @@ const output =
 document.getElementById("output");
 
 output.innerHTML =
-"<div class='loading'>Generating amazing content...</div>";
+"Generating amazing content...";
 
 const API_KEY =
-"AIzaSyDCOE6fWH-6kyh9OhoYh87uBetaq_luKpU";
+"YOUR_API_KEY";
 
 const prompt = `
 You are a viral YouTube strategist.
@@ -31,7 +31,7 @@ Make it emotional and highly engaging.
 try{
 
 const response = await fetch(
-`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${AIzaSyDCOE6fWH-6kyh9OhoYh87uBetaq_luKpU}`,
+`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`,
 {
 method:"POST",
 headers:{
@@ -63,14 +63,4 @@ output.innerHTML =
 
 }
 
-}
-
-function copyText(){
-
-const text =
-document.getElementById("output").innerText;
-
-navigator.clipboard.writeText(text);
-
-alert("Copied!");
 }
