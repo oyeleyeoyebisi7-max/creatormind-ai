@@ -10,7 +10,7 @@ output.innerHTML =
 "<div class='loading'>Generating amazing content...</div>";
 
 const API_KEY =
-"YOUR_API_KEY";
+"AIzaSyDCOE6fWH-6kyh9OhoYh87uBetaq_luKpU";
 
 const prompt = `
 You are a viral YouTube strategist.
