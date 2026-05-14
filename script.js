@@ -7,10 +7,10 @@ const output =
 document.getElementById("output");
 
 output.innerHTML =
-"Generating amazing content...";
+"<div class='loading'>Generating amazing content...</div>";
 
 const API_KEY =
-"YOUR_API_KEY";
+"AIzaSyBFORPdqyvZeUdJGsh8THhjF7TL8yxOhzs";
 
 const prompt = `
 You are a viral YouTube strategist.
@@ -51,16 +51,40 @@ parts:[
 
 const data = await response.json();
 
+console.log(data);
+
+if(data.candidates){
+
 const text =
 data.candidates[0].content.parts[0].text;
 
 output.innerHTML = text;
+
+}else{
+
+output.innerHTML =
+"API Error. Check API key.";
+
+}
 
 }catch(error){
 
 output.innerHTML =
 "Something went wrong.";
 
+console.log(error);
+
 }
+
+}
+
+function copyText(){
+
+const text =
+document.getElementById("output").innerText;
+
+navigator.clipboard.writeText(text);
+
+alert("Copied!");
 
 }
